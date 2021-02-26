@@ -13,7 +13,3 @@ echo "kubectl apply -f srcs/configmap.yaml"
 kubectl apply -f srcs/configmap.yaml
 echo "kubectl apply -f srcs/nginx.yaml"
 kubectl apply -f srcs/nginx.yaml
-echo "kubectl get svc"
-kubectl get svc
-echo "kubectl get deploy"
-kubectl get deploy

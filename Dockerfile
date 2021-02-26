@@ -25,5 +25,5 @@ EXPOSE 22 80 443
 #starting script
 COPY ./srcs/start.sh /tmp/
 RUN chmod +x /tmp/start.sh
-CMD ["/tmp/nginx_start.sh"]
+CMD ["/tmp/start.sh"]
 
