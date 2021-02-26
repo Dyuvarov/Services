@@ -8,6 +8,10 @@ spec:
   type: LoadBalancer
   ports:
     - protocol: TCP
+      name: ssh
+      port: 22
+      targetPort: 22      
+    - protocol: TCP
       name: http
       port: 80
       targetPort: 80
