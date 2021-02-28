@@ -19,7 +19,6 @@ RUN wget https://files.phpmyadmin.net/phpMyAdmin/5.0.2/phpMyAdmin-5.0.2-english.
 RUN tar -xzvf phpMyAdmin-5.0.2-english.tar.gz
 RUN mkdir -p /var/www/
 RUN mv phpMyAdmin-5.0.2-english /var/www/phpmyadmin
-RUN mv phpMyAdmin-5.0.2-english phpmyadmin
 RUN rm phpMyAdmin-5.0.2-english.tar.gz
 COPY  config.inc.php /var/www/phpmyadmin
 
