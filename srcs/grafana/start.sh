@@ -1,3 +1,4 @@
 #!/bin/sh
 
-/grafana/bin/grafana-server
+cd /grafana/bin
+./grafana-server

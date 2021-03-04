@@ -17,6 +17,7 @@ RUN touch /run/openrc/softlevel
 #mariadb
 RUN apk add mariadb mariadb-client
 COPY mariadb-server.cnf /etc/my.cnf.d
+COPY WordPress_db.sql /
 
 COPY start.sh /start.sh
 RUN chmod +x start.sh

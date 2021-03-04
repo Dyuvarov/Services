@@ -1,20 +1,22 @@
-FROM alpine:3.12
+FROM    alpine:3.12
 
 #update before install
 RUN apk update
 RUN apk upgrade
 
-#To use rc-service
-RUN apk add openrc
-RUN mkdir /run/openrc
-RUN touch /run/openrc/softlevel
+#supervisor
+RUN apk add supervisor
+COPY ./supervisord.conf   /etc/supervisord.conf
 
 RUN apk add influxdb
+
 RUN apk add telegraf --no-cache --repository http://dl-2.alpinelinux.org/alpine/edge/community
-COPY ./telegraf.conf /etc/
+RUN mkdir /etc/telegraf/
+RUN ./usr/bin/telegraf -sample-config --input-filter docker --output-filter influxdb > /etc/telegraf/telegraf.conf
 
-COPY start.sh /
-RUN chmod +x /start.sh
-CMD ["/start.sh"]
+#RUN mkdir -p /var/lib/influxdb
+#VOLUME	["var/lib/influxdb"]
 
-EXPOSE 8086
+EXPOSE  8086
+
+CMD ["/usr/bin/supervisord", "-c", "/etc/supervisord.conf"]
