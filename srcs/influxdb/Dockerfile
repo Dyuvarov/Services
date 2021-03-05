@@ -14,9 +14,6 @@ RUN apk add telegraf --no-cache --repository http://dl-2.alpinelinux.org/alpine/
 RUN mkdir /etc/telegraf/
 RUN ./usr/bin/telegraf -sample-config --input-filter docker --output-filter influxdb > /etc/telegraf/telegraf.conf
 
-#RUN mkdir -p /var/lib/influxdb
-#VOLUME	["var/lib/influxdb"]
-
 EXPOSE  8086
 
 CMD ["/usr/bin/supervisord", "-c", "/etc/supervisord.conf"]
