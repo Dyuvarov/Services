@@ -3,7 +3,7 @@
 echo "minikube delete"
 minikube delete
 echo "minikube start"
-minikube --vm-driver=virtualbox start
+minikube start --vm-driver=virtualbox
 echo "eval $(minikube docker-env)"
 eval $(minikube docker-env)
 echo "minikube addons enable metallb"
