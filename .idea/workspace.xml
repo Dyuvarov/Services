@@ -7,27 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="65b88518-0e43-4a39-921f-8e07f3253715" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/srcs/grafana/grafana.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/srcs/nginx/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/srcs/nginx/k8s.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ft_services.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restart_minikube.sh" beforeDir="false" afterPath="$PROJECT_DIR$/setup.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/configmap.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/configmap.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/grafana/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/grafana/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/grafana/grafana.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/grafana/grafana.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/influxdb/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/influxdb/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/influxdb/influxdb.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/influxdb/influxdb.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/mysql/mysql.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/mysql/mysql.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/nginx/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/nginx/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/nginx/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/nginx/nginx.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/nginx/nginx.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/nginx/nginx.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/nginx/start.sh" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/nginx/start.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/nginx/supervisord.conf" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/nginx/supervisord.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/wordpress/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/wordpress/nginx.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/ftps/ftps.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/ftps/ftps.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/phpmyadmin/phpmyadmin.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/phpmyadmin/phpmyadmin.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/wordpress/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/wordpress/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/wordpress/wp.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/wordpress/wp.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +68,7 @@
       <workItem from="1614754791237" duration="24664000" />
       <workItem from="1614857932993" duration="5114000" />
       <workItem from="1614865678645" duration="44000" />
-      <workItem from="1614927116809" duration="17414000" />
+      <workItem from="1614927116809" duration="18160000" />
     </task>
     <servers />
   </component>
