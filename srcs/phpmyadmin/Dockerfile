@@ -4,6 +4,10 @@ FROM alpine:3.12
 RUN apk update
 RUN apk upgrade
 
+#supervisor
+RUN apk add supervisor
+COPY supervisord.conf /etc/supervisord.conf
+
 #nginx
 RUN apk add nginx
 RUN mkdir -p /run/nginx

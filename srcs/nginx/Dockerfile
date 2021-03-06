@@ -6,6 +6,7 @@ RUN apk upgrade
 
 #supervisor
 RUN apk add supervisor
+COPY supervisord.conf /etc/supervisord.conf
 
 #install
 RUN apk add nginx openssl openssh
@@ -14,7 +15,7 @@ COPY nginx.conf /etc/nginx/conf.d/default.conf
 COPY index.html /var/www/
 COPY k8s.png /var/www/
 
-COPY supervisord.conf /etc/supervisord.conf
+
 
 #openssl key
 RUN openssl req -x509 -new -newkey rsa:2048 -nodes \
