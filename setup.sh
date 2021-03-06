@@ -1,7 +1,6 @@
 #!/bin/bash
 
-minikube delete
-minikube start --vm-driver=virtualbox --memory=4096 CPUs=3
+minikube start --vm-driver=virtualbox --memory=4096
 eval $(minikube docker-env)
 minikube addons enable dashboard
 minikube addons enable metallb
@@ -22,3 +21,4 @@ kubectl apply -f srcs/wordpress/wp.yaml
 kubectl apply -f srcs/phpmyadmin/phpmyadmin.yaml
 kubectl apply -f srcs/ftps/ftps.yaml
 kubectl apply -f srcs/grafana/grafana.yaml
+minikube dashboard
