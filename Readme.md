@@ -13,9 +13,6 @@
 # How to launch
 Everything you need is to launch the scrip "setup.sh" (use "bash setup.sh" in the root of repository).
 
-# Follow me:stuck_out_tongue_winking_eye:
-inst: [@dyuvarov](www.instagram.com/dyuvarov/)
-
 # Main Part
 ## Services
 ### :white_check_mark:NGINX
